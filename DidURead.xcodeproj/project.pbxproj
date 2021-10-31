@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B8DFB272718C7EB00EB3966 /* BookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8DFB262718C7EB00EB3966 /* BookCell.swift */; };
+		8BAE1E12271C98B800B5CA2F /* AddBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE1E11271C98B800B5CA2F /* AddBookVC.swift */; };
+		8BAE1E14271C9A8F00B5CA2F /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE1E13271C9A8F00B5CA2F /* UIViewControllerExtension.swift */; };
+		8BAE1E16271CA20500B5CA2F /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE1E15271CA20500B5CA2F /* UIButtonExtension.swift */; };
+		8BAE1E18271CA9E000B5CA2F /* CreateBookVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BAE1E17271CA9E000B5CA2F /* CreateBookVC.swift */; };
+		8BBAFD89271B068A007C98B9 /* ReadingPeriodEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBAFD88271B068A007C98B9 /* ReadingPeriodEnum.swift */; };
 		8BCAF46A27175F1400D2AFEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAF46927175F1400D2AFEC /* AppDelegate.swift */; };
 		8BCAF46C27175F1400D2AFEC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAF46B27175F1400D2AFEC /* SceneDelegate.swift */; };
-		8BCAF46E27175F1400D2AFEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAF46D27175F1400D2AFEC /* ViewController.swift */; };
+		8BCAF46E27175F1400D2AFEC /* ListOfBooksVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAF46D27175F1400D2AFEC /* ListOfBooksVC.swift */; };
 		8BCAF47127175F1400D2AFEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8BCAF46F27175F1400D2AFEC /* Main.storyboard */; };
 		8BCAF47427175F1400D2AFEC /* DidURead.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8BCAF47227175F1400D2AFEC /* DidURead.xcdatamodeld */; };
 		8BCAF47627175F1400D2AFEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCAF47527175F1400D2AFEC /* Assets.xcassets */; };
@@ -17,10 +23,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B8DFB262718C7EB00EB3966 /* BookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCell.swift; sourceTree = "<group>"; };
+		8BAE1E11271C98B800B5CA2F /* AddBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookVC.swift; sourceTree = "<group>"; };
+		8BAE1E13271C9A8F00B5CA2F /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		8BAE1E15271CA20500B5CA2F /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		8BAE1E17271CA9E000B5CA2F /* CreateBookVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBookVC.swift; sourceTree = "<group>"; };
+		8BBAFD88271B068A007C98B9 /* ReadingPeriodEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingPeriodEnum.swift; sourceTree = "<group>"; };
 		8BCAF46627175F1400D2AFEC /* DidURead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DidURead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCAF46927175F1400D2AFEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BCAF46B27175F1400D2AFEC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8BCAF46D27175F1400D2AFEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8BCAF46D27175F1400D2AFEC /* ListOfBooksVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfBooksVC.swift; sourceTree = "<group>"; };
 		8BCAF47027175F1400D2AFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8BCAF47327175F1400D2AFEC /* DidURead.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DidURead.xcdatamodel; sourceTree = "<group>"; };
 		8BCAF47527175F1400D2AFEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,16 +70,62 @@
 		8BCAF46827175F1400D2AFEC /* DidURead */ = {
 			isa = PBXGroup;
 			children = (
+				8BCAF486271761DD00D2AFEC /* Extensions */,
+				8BCAF485271761D300D2AFEC /* Enums */,
+				8BCAF48427175F3E00D2AFEC /* Controller */,
+				8BCAF48327175F3700D2AFEC /* View */,
+				8BCAF48127175F2600D2AFEC /* Model */,
 				8BCAF46927175F1400D2AFEC /* AppDelegate.swift */,
 				8BCAF46B27175F1400D2AFEC /* SceneDelegate.swift */,
-				8BCAF46D27175F1400D2AFEC /* ViewController.swift */,
 				8BCAF46F27175F1400D2AFEC /* Main.storyboard */,
 				8BCAF47527175F1400D2AFEC /* Assets.xcassets */,
 				8BCAF47727175F1400D2AFEC /* LaunchScreen.storyboard */,
 				8BCAF47A27175F1400D2AFEC /* Info.plist */,
-				8BCAF47227175F1400D2AFEC /* DidURead.xcdatamodeld */,
 			);
 			path = DidURead;
+			sourceTree = "<group>";
+		};
+		8BCAF48127175F2600D2AFEC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8BCAF47227175F1400D2AFEC /* DidURead.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8BCAF48327175F3700D2AFEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B8DFB262718C7EB00EB3966 /* BookCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8BCAF48427175F3E00D2AFEC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8BCAF46D27175F1400D2AFEC /* ListOfBooksVC.swift */,
+				8BAE1E11271C98B800B5CA2F /* AddBookVC.swift */,
+				8BAE1E17271CA9E000B5CA2F /* CreateBookVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8BCAF485271761D300D2AFEC /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				8BBAFD88271B068A007C98B9 /* ReadingPeriodEnum.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		8BCAF486271761DD00D2AFEC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8BAE1E13271C9A8F00B5CA2F /* UIViewControllerExtension.swift */,
+				8BAE1E15271CA20500B5CA2F /* UIButtonExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +199,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BCAF46E27175F1400D2AFEC /* ViewController.swift in Sources */,
+				8BBAFD89271B068A007C98B9 /* ReadingPeriodEnum.swift in Sources */,
+				8BAE1E12271C98B800B5CA2F /* AddBookVC.swift in Sources */,
+				8BCAF46E27175F1400D2AFEC /* ListOfBooksVC.swift in Sources */,
 				8BCAF46A27175F1400D2AFEC /* AppDelegate.swift in Sources */,
+				8BAE1E14271C9A8F00B5CA2F /* UIViewControllerExtension.swift in Sources */,
+				8BAE1E16271CA20500B5CA2F /* UIButtonExtension.swift in Sources */,
 				8BCAF46C27175F1400D2AFEC /* SceneDelegate.swift in Sources */,
 				8BCAF47427175F1400D2AFEC /* DidURead.xcdatamodeld in Sources */,
+				8B8DFB272718C7EB00EB3966 /* BookCell.swift in Sources */,
+				8BAE1E18271CA9E000B5CA2F /* CreateBookVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
