@@ -1,4 +1,4 @@
-# DidURead
+# Did U Read
 
 It is an app for record books you read.
 I developed this app by using MVC Design Pattern and Core Data for database. Also there are Extensions and Enums.
